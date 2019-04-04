@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Patrick Stratton IT 238 Assignment 1</title>
+        <link rel="stylesheet" type="text/css" href="../pstratton_it238_week1/styles.css">
+            <script type="text/javascript">
+            function submitForm()
+            {
+                var favCity;
+
+                favCity =  document.getElementById('selFavCity').value;
+
+                alert("Thanks for your feedback!");
+            }
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+                console.log('The new file');
+                var x='a string variable';
+                console.log(x);
+                console.log(document);
+                console.log($(document));
+                console.log($('body'));
+                console.log($);
+                $( document ).ready(function() {
+                console.log('I am ready');
+                });
+            </script>
+    </head>
+    
+    <body id="main_content">
+        <p>This is the body of assignment 1.</p>
+        <form id="favCity">
+            <p>Select your favorite city:
+                <br>
+                <select id="selFavCity">
+                    <option value="NYC">NYC</option>
+                    <option value="LA">LA</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+            </p>
+            <p><input type="button" value="Submit" id="btnSubmit" onclick="submitForm()"></p>
+        </form>
+    </body>
+    
+</html>
